@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionando conteúdos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+       
+        div.video {
+            background-color: rgb(49, 9, 9);
+            border-radius: 8px;
+            box-shadow: 5px rgba(0, 0, 0, 0.699);
+            margin: 20px -10px;
+            padding: 20px;
+            padding-bottom: 59.25%;
+            position: relative;
+        }
+
+        div.video iframe {
+            
+            border-radius: 8px;
+            box-shadow: 10 10px 20px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: calc(100% - 40px);
+            height: calc(100% - 40px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Conteúdos dentro de iframes</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, debitis
+        quidem praesentium architecto odit corporis autem repudiandae id eaque,
+        numquam iusto, perspiciatis modi expedita iste atque illum impedit porro
+        aspernatur?
+    </p>
+    <h2>Vídeos</h2>
+    <div class="video">
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8M6VlfP_CcA?si=C6tg9F198XgUgeez"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            Seu navegador não suporta iframes
+        </iframe>
+        
+    </div>
+    
+    <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-22.272305&lon=-46.163532&ct=livemap" width="300" height="300" allowfullscreen></iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, incidunt culpa? Labore harum, vero expedita officia recusandae repudiandae incidunt veniam blanditiis dolore ducimus, dicta nemo obcaecati. Cupiditate ipsum nam enim!</p>
+</body>
+
+</html>
